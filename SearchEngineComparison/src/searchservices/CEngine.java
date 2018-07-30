@@ -1,27 +1,20 @@
 package searchservices;
 
 public class CEngine {
-    private String name;
+    private String enginename;
     private String url;
     private String patternSearchIni;
     private String patternSearchFin;
-        
-    public CEngine() {
-        name = "";
-        url = "";
-        patternSearchIni = "";
-        patternSearchFin = "";
-    }
     
-    public CEngine(String name, String url, String patternSearchIni, String patternSearchFin) {
-        this.name = name;
+    public CEngine(String enginename, String url, String patternSearchIni, String patternSearchFin) {
+        this.enginename = enginename;
         this.url = url;
         this.patternSearchIni = patternSearchIni;
         this.patternSearchFin = patternSearchFin;
     }
     
-    public String getName() {
-        return this.name;
+    public String getEngineName() {
+        return this.enginename;
     }
     
     public String getURL() {

@@ -1,26 +1,26 @@
 package searchservices;
-// Stores the result from querying the engines
+
 public class CResult {
-    private String engine;
+    private String enginename;
     private String term;
     private long quantity;
     
-    public CResult(String engine, String term, long quantity) {
-        this.engine = engine;
+    public CResult(String enginename, String term, long quantity) {
+        this.enginename = enginename;
         this.term = term;
         this.quantity = quantity;
     }
     
     public void additionate(long number) {
-        this.quantity = this.quantity + number;
-    }
-    
-    public String getEngine() {
-        return this.engine;
-    }
+        this.quantity += number;
+    }    
 
     public String getTerm() {
         return this.term;
+    }
+    
+    public String getEngineName() {
+        return this.enginename;
     }
 
     public long getQuantity() {
