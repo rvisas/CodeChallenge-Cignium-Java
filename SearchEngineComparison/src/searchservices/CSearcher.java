@@ -75,7 +75,10 @@ public class CSearcher {
                 HTMLStringLines.add(inputLine);
             }
             inputBuffer.close();            
-        } catch (Exception e) {            
+        } catch (Exception e) {          
+            System.out.println("An Exception has been raised:");
+            System.out.println(e.toString());
+            System.out.println("The Stack Trace of the subroutines is:");
             e.printStackTrace();
         }
         return HTMLStringLines;
